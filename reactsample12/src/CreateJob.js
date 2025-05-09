@@ -8,7 +8,7 @@ const CreateJob = () => {
   // This function will be called when the button is clicked
   const handleClickEvent = () => {
     // setJobCount is a function that increments up the state variable jobCount
-    setJobCounter(prevCount => prevCount + 1);
+    setJobCounter(jobCounter + 1);
     console.log('Run job', jobCounter + 1); // Log the new job count to the console
   };
 
