@@ -27,11 +27,12 @@ const CreateJob = () => {
 
   return (
     <div>
-      <h1>Job Counter</h1>
-      <p>Number of jobs : {jobCounter}</p>
+      <h1>Bots running in Production : {jobCounter}</h1>
       <button onClick={handleClickEvent}>Run a job</button><br />
       <button onClick={handleSubEvent}>Remove a job</button><br />
       <button onClick={handleResetEvent}>Reset</button>
+
+      <h1>Bots running in UAT : {jobCounter - 5}</h1>
     </div>
   )
 }
